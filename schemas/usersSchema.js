@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const schema = new mongoose.Schema({
     name:{
-        type: String
-        // required: true
+        type: String,
+        required: true
     },
     nickname:{
         type: String

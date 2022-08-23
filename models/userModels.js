@@ -2,7 +2,7 @@ const userSchema = require('../schemas/usersSchema')
 
 const createUsers = async (req,res)=>{
     const newUser = req;//Con el body que pasamos desde el controller con el param "req"
-    console.log(newUser);
+    
     try{
         
         let user = new userSchema(newUser);

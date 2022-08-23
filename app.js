@@ -1,6 +1,6 @@
 const express = require('express');
 
-
+require('./utils/dbMongo.js');
 //Routes
 const landingsRouter = require('./routes/landingsRoutes.js')
 const neasRouter = require('./routes/neasRoutes.js');
