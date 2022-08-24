@@ -1,0 +1,1 @@
+const neasSchema = require('../schemas/neasSchemas');
