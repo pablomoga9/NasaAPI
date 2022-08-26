@@ -3,8 +3,8 @@ const neasControllers = require("../controllers/neasControllers");
 const neasRouter = express.Router();
 
  neasRouter.get('/astronomy/neas', neasControllers.getNeas);
-//  neasRouter.get('/astronomy/landings', neasControllers.getNeasByClass);
-//  neasRouter.get('/astronomy/landings', neasControllers.getLandingByDate);
-//  neasRouter.post('astronomy/landings', neasControllers.createNea);
+ neasRouter.post('/astronomy/neas', neasControllers.createNea);
+ neasRouter.delete('/astronomy/neas', neasControllers.deleteNea);
+ neasRouter.put('/astronomy/neas', neasControllers.updateNea);
 
  module.exports = neasRouter;
